@@ -1,0 +1,1 @@
+# defender-xdr-daily-brief-in-teams
