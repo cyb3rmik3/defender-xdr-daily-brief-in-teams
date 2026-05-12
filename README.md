@@ -3,7 +3,7 @@
 An automated daily security briefing from Microsoft Defender XDR delivered to a Microsoft Teams channel via Azure Logic Apps. Runs scheduled Advanced Hunting queries (KQL) and presents key security signals in a single Adaptive Card.
 
 ## What It Is 🧩
-An ARM-deployable Logic App that:
+A Logic App automation that:
 - Executes daily KQL queries via Microsoft Graph Security API
 - Aggregates signals across Defender workloads
 - Posts a Teams Adaptive Card with key metrics and deep links
@@ -34,11 +34,11 @@ An ARM-deployable Logic App that:
 - Teams API connection authorized
 
 ## Deployment 🚀
-- Deploy ARM template via Azure Portal
+- Deploy [the template](https://github.com/cyb3rmik3/defender-xdr-daily-brief-in-teams/blob/main/DefenderXDR-DailyBrief-Teams.json) via Azure Portal
 - Authorize Teams connection
 - Assign Graph permissions to Managed Identity
 - Trigger Logic App to validate output in Teams
-(See deployment guide for full steps)
+(See [deployment guide](https://github.com/cyb3rmik3/defender-xdr-daily-brief-in-teams/blob/main/deployment-guide.md) for full steps)
 
 ## Customization 🔄
 - Add/modify KQL queries
@@ -46,5 +46,4 @@ An ARM-deployable Logic App that:
 - Extend Adaptive Card content
 - Integrate with other workflows (e.g., ticketing, alerts)
 
-## Why It Matters 💡
-Surfaces Defender XDR insights directly in Teams, reducing investigation time and driving consistent security operations.
+> 💡 This solution has been a collaborative effort with fellow contributors [irinil](https://github.com/irinil) & [Zack](https://github.com/zeta-codes).
