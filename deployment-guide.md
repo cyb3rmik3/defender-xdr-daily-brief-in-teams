@@ -2,7 +2,7 @@
 
 ## 0. Prerequisites
 
-- Get the **teamsGroupID** and **teamsChannelId** before deploying the ARM Template
+Get the **teamsGroupID** and **teamsChannelId** before deploying the ARM Template
 > Note: Teams Reader is the least privilige role for the powershell method
 
 ### Powershell method
