@@ -14,13 +14,13 @@ A Logic App automation that:
 - Teams connector
 - Defender XDR Advanced Hunting
 
-## How It Helps 🛡️
+## 🛡️ How It Helps 
 - Quick visibility – Snapshot of last 24h security posture
-- aster triage – Highlights high alerts, threats, and gaps
+- Faster triage – Highlights high alerts, threats, and gaps
 - Consistency – Enforces a daily SecOps routine
 - Cross-domain view – Endpoint, Email, Identity, Cloud Apps
 
-## Daily Signals 📊
+## 📊 Daily Signals 
 - 🚨 Alerts & AIR remediation
 - 📧 Phishing & malware activity
 - 🖥️ Device health & AV status
@@ -28,19 +28,19 @@ A Logic App automation that:
 - ☁️ Newly discovered apps
 - 🔑 Privileged identities
 
-## Key Requirements ⚙️
+## ⚙️ Key Requirements 
 - Defender XDR data available (MDE, MDO, MDI, etc.)
 - Managed Identity with: *ThreatHunting.Read.All* (Microsoft Graph)
 - Teams API connection authorized
 
-## Deployment 🚀
+## 🚀 Deployment 
 - Deploy [the template](https://github.com/cyb3rmik3/defender-xdr-daily-brief-in-teams/blob/main/DefenderXDR-DailyBrief-Teams.json) via Azure Portal
 - Authorize Teams connection
 - Assign Graph permissions to Managed Identity
 - Trigger Logic App to validate output in Teams
 (See [deployment guide](https://github.com/cyb3rmik3/defender-xdr-daily-brief-in-teams/blob/main/deployment-guide.md) for full steps)
 
-## Customization 🔄
+## 🔄 Customization 
 - Add/modify KQL queries
 - Adjust schedule or time window
 - Extend Adaptive Card content
