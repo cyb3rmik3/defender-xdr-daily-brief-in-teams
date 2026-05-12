@@ -4,7 +4,8 @@
 
 - Get the **teamsGroupID** and **teamsChannelId** before deploying the ARM Template
 > Note: Teams Reader is the least privilige role for the powershell method
-###Powershell method
+
+### Powershell method
 1. Install Microsoft Teams Powershell module, detailed steps can be found [here](https://learn.microsoft.com/en-us/MicrosoftTeams/teams-powershell-install)
 ```powershell
 Install-Module -Name MicrosoftTeams 
@@ -25,7 +26,7 @@ Get-TeamChannel -GroupId "TeamsGroupID"
 ```
 The `Id` in the first column is your `teamsChannelId`
 
-##UI method
+### UI method
 
 1. Open Microsoft Teams
 2. Navigate to the Team and Channel you are interested in
