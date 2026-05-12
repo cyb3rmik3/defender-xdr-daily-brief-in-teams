@@ -21,12 +21,12 @@ An ARM-deployable Logic App that:
 - Cross-domain view – Endpoint, Email, Identity, Cloud Apps
 
 ## Daily Signals 📊
-🚨 Alerts & AIR remediation
-📧 Phishing & malware activity
-🖥️ Device health & AV status
-🧨 Critical vulnerabilities
-☁️ Newly discovered apps
-🔑 Privileged identities
+- 🚨 Alerts & AIR remediation
+- 📧 Phishing & malware activity
+- 🖥️ Device health & AV status
+- 🧨 Critical vulnerabilities
+- ☁️ Newly discovered apps
+- 🔑 Privileged identities
 
 ## Key Requirements ⚙️
 - Defender XDR data available (MDE, MDO, MDI, etc.)
