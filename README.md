@@ -1,5 +1,3 @@
-# Defender XDR Daily Brief in Teams
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/cyb3rmik3/defender-xdr-daily-brief-in-teams/refs/heads/main/defender-xdr-daily-brief-in-teams.png">
 </p>
