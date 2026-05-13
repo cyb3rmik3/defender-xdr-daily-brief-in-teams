@@ -1,5 +1,9 @@
 # Defender XDR Daily Brief in Teams
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cyb3rmik3/defender-xdr-daily-brief-in-teams/refs/heads/main/defender-xdr-daily-brief-in-teams.png">
+</p>
+
 An automated daily security briefing from Microsoft Defender XDR delivered to a Microsoft Teams channel via Azure Logic Apps. Runs scheduled Advanced Hunting queries (KQL) and presents key security signals in a single Adaptive Card.
 
 ## What It Is 🧩
