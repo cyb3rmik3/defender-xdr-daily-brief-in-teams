@@ -84,6 +84,19 @@ New-AzureADServiceAppRoleAssignment -ObjectId $principalId `
   -PrincipalId $principalId -ResourceId $graphSP.ObjectId -Id $role.Id
 ```
 
+If the above method does not work due to `Connect-AzureAD` please use the following:
+
+```powershell
+$principalId = "<LOGIC APP MANAGED IDENTITY OBJECT ID>"
+
+Connect-MgGraph -Scopes "AppRoleAssignment.ReadWrite.All"
+$graphSP = Get-MgServicePrincipal -Filter "AppId eq '00000003-0000-0000-c000-000000000000'"
+$role = $graphSP.AppRoles | Where-Object { $_.Value -eq "ThreatHunting.Read.All" }
+
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $principalId `
+  -PrincipalId $principalId -ResourceId $graphSP.Id -AppRoleId $role.Id
+```
+
 > **Note:** You can run this script from an Azure Cloud Shell. Replace `<LOGIC APP MANAGED IDENTITY OBJECT ID>` with the **Object (Principal) ID** of the Logic App's system-assigned managed identity.  
 > Found at: Navigate on the left, under **Settings** → click **Identity** → System assigned → **Object (Principal) ID**
 > Also  It may take 30–60 minutes for the permissions to be fully applied and become effective.
