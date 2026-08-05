@@ -43,7 +43,7 @@ The `Id` in the first column is your `teamsChannelId`
 ## 1. Deploy the ARM Template
 
 1. Go to **Azure Portal** → search for **"Deploy a custom template"**
-2. Click **"Build your own template in the editor"** and paste the contents of `DefenderXDR-DailyBrief-Teams.json`
+2. Click **"Build your own template in the editor"** and paste the contents of `DefenderXDR-DailyBrief-Teams.json`. (In case you are part of the E3 offering please use the following template instead `DefenderXDR-DailyBrief-Teams-P1.json`)
 3. Fill in the required parameters:
    - `workflowName` — name for the Logic App (default: `DefenderXDR-DailyBrief-Teams`)
    - `location` — Azure region
